@@ -7,8 +7,8 @@ import smtplib
 app = Flask("__name__")
 Bootstrap(app)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
-EMAIL = "hansipriya.0504@gmail.com"
-PASSWORD = "qcrjvjjvlogfugvj"
+EMAIL = "admin@gmail.com"
+PASSWORD = "password"
 
 
 
