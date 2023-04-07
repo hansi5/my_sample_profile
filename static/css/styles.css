@@ -1,0 +1,187 @@
+
+/* body */
+
+body{
+    text-align: center;
+    font-family: "Roboto";
+}
+.heading{
+    font-family: "Merriweather";
+    padding: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+hr{
+    border-top: dotted #73777B 5px;
+    width: 10%;
+}
+.row-div{
+    text-align: left;
+    padding: 50px;
+}
+.column{
+    padding: 50px;
+}
+
+
+/* navbar */
+
+.navbar{
+    padding: 10px 35px 2px;
+}
+
+.navbar-brand{
+    font-family: "Montserret";
+    font-style: italic;
+    font-size: 35px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.nav-colored{
+    background-color: #73777B;
+}
+.nav-transparent{
+    background-color: transparent;
+}
+.nav-item{
+    padding: 10px;
+}
+
+
+/* welcome section */
+
+.first{
+    width: 100%;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.image{
+
+    background-image: url('../images/sincerely-media-BPb0tlUc_CQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.intro{
+    color: white;
+    padding: 200px 80px 40px;
+}
+.name{
+    font-family: "Passions Conflict";
+    font-style: italic;
+    font-size: 90px;
+    line-height: 90px;
+    text-align: left;
+    color: #413F42;
+}
+
+
+/* about me */
+
+.second{
+    padding: 80px 80px 50px;
+}
+.para{
+    width: 60%;
+    margin: auto;
+}
+
+/* skills */
+
+.third{
+    padding: 50px;
+    padding-bottom: 10px;
+    width: 70%;
+    margin: auto;
+}
+.float-left{
+    float: left;
+    margin: 30px;
+}
+.float-right{
+    float: right;
+    margin: 30px;
+}
+.skill-row{
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.tally{
+    width: 133px;
+}
+
+
+/* interests */
+
+.icon{
+    height: 110px;
+    width: 110px;
+    padding: 25px;
+
+}
+.fifth{
+    text-align: center;
+
+}
+
+
+
+
+/* contact */
+
+.sixth{
+    padding: 50px;
+    background-color: #73777B;
+    color: white;
+}
+
+.fab{
+    padding: 25px 18px;
+    color: white;
+}
+.fab:hover{
+    color: #B2B2B2;
+}
+.fab a{
+    color: white;
+}
+.fab a:hover{
+    color: #B2B2B2;
+}
+
+
+/* contact page */
+
+.image2{
+
+    background-image: url('../images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.mail {
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 90px;
+    color: #413F42;
+    width: 40%;
+}
+#contact-div .intro{
+    padding-top: 300px;
+    text-align: left;
+}
+.form{
+    text-align: left;
+    padding: 50px;
+
+}
+
+
+
+
+
+
+
+
+

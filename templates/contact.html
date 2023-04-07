@@ -1,0 +1,17 @@
+{% include "header.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+<header>
+    <div class="first image2" id="contact-div">
+        <div class="intro">
+           <h2 class="mail"> {{ name }}</h2>
+        </div>
+    </div>
+    <div class="form container">
+        <h2>Send a message.</h2>
+        {{ wtf.quick_form(form, button_map={"submit": "secondary"}) }}
+    </div>
+
+
+
+</header>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Profile</title>
+    <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital@1&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+<!--    icon link    -->
+<link rel="icon" href="favicon.ico">
+
+<!--  font awesome-->
+  <script src="https://kit.fontawesome.com/97bea71383.js" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+
+<!--    javascript for navbar-->
+  <script>
+      var myNav = document.getElementById('mainNav');
+      window.onscroll = function () {
+        if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 200 ) {
+            mainNav.classList.add("nav-colored");
+            mainNav.classList.remove("nav-transparent");
+            mainNav.classList.add("navbar-dark");
+            mainNav.classList.remove("navbar-light");
+        }
+        else {
+            mainNav.classList.add("nav-transparent");
+            mainNav.classList.remove("nav-colored");
+            mainNav.classList.remove("navbar-dark");
+            mainNav.classList.add("navbar-light");
+        }
+      };
+  </script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-colored nav-transparent fixed-top" id="mainNav">
+
+      <a class="navbar-brand" href="#">{{page}}</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          {% if page == "profile": %}
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link " href="#about">About <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+          {% else %}
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link " href="{{ url_for('profile') }}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/hansika-priya/">LinkedIn</a>
+            <a class="nav-item nav-link" href="https://www.instagram.com/h.a.n.s.i_05/">Instagram</a>
+            <a class="nav-item nav-link" href="https://github.com/hansi5">GitHub</a>
+        </div>
+
+          {% endif %}
+      </div>
+    </nav>
+
+
+
+
+
